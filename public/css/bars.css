@@ -1,0 +1,47 @@
+/* BARS */
+
+.bar {
+    display: flex;
+    width: 100%;
+    background: black;
+}
+
+.barE {
+    display: flex;
+    width: 100%;
+    background: blue;
+}
+
+.footer {
+    position: absolute;
+}
+
+.header {
+    position: fixed;
+}
+
+.headerLogo {
+    color: white;
+    float: left;
+}
+
+.headerMenu {
+    float: right;
+    margin: 0;
+}
+
+.headerMenuItem {
+    color: white;
+    display: inline-block;
+}
+
+.headerMenuItem:hover {
+    background-color: cornflowerblue;
+    transition: 0.7s;
+    padding: 4px;
+}
+
+.menu-button {
+    display: inline-block;
+    color: bisque;
+}

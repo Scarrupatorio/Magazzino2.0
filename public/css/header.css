@@ -1,0 +1,23 @@
+/*Header*/
+
+html,.body,.container{ height: 100%; margin: 0; padding: 0; }
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    background: black;
+}
+
+.menu{
+    width: 80%;
+}
+.menu li{display: inline-block;}
+.menu li a{color: bisque; padding: 15px;}
+
+.space{
+    padding-top: 76px;
+}

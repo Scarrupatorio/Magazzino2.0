@@ -1,0 +1,84 @@
+/*-------------MAGAZZINO1--------------*/
+
+
+html,body,.container{ height: 100%; margin: 0; padding: 0; }
+
+.body{
+    margin: auto;
+    height: auto;
+    font-size: 20px;
+    background-image: url(../img/login.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-shadow: 4px 2px 20px black;
+}
+
+
+.title_m{
+    color: #191970;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    text-shadow: 4px 2px 8px #254dc6;
+}
+
+.testata {
+    margin: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 70px;
+    text-align: center;
+}
+
+.controlli_m{
+    color: navy;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: left;
+    text-shadow: 4px 2px 8px #ffA500;
+}
+
+.tabella_m{
+    margin: left;
+    border: 1px solid navy;
+    width: 60%;
+    height: 50%;
+    background-color: #8ca4eb;
+    grid-column: 4px;
+    box-shadow: 10px 10px 5px#000;
+    margin: 2rem;
+    padding: 3rem;
+    text-align: left;
+}
+
+tr, th, td{
+    border: 1.5px solid black;
+    text-align: left;
+    text-shadow: 4px 2px 8px black;
+}
+
+.form__button{
+    font: 300 1rem 'Inter', sans-serif;
+    text-align: right;
+    text-shadow: 4px 2px 8px #254dc6;
+}
+
+.form__button:hover{
+    background-color: #191970;
+}
+
+.form__button:active{
+    transform: scale(0.80);
+}
+
+/*Francesco_Magazzino*/
+
+.tipoAcc{
+    color: red;
+    text-align: right;
+    font-size: small;
+}

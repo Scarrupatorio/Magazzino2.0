@@ -4,20 +4,29 @@
     <div class="w-bg-h w-p-7">
         <div class="w-f-w-b w-f-s-70 w-ta-c w-intro w-c-bisque">Ordini Forniture</div>
         <div class="w-f-w-b w-f-s-20 w-ta-c w-capital w-m-t-4">ordini effettuati ordini ricevuti ordini da effetturare</div>
-        <div class="w-p-t-4">
-            <div class="w-w-100 w-h-20 w-bg-beige w-m-t-4 w-jc-sb w-f-s-20 w-f-w-b">
-                <% for (var i = 0; i < title.length; i++) { %>
-                    <div class=""><%= title[i].nome %></div>
-                <% } %>
+        <div class="w-jc-sa w-w-100">
+            <div class="">
+                <table class="w-p-t-4">
+                    <thead class="w-bg-beige w-m-t-4 w-f-s-20 w-f-w-b">
+                        <tr>
+                            <% for (var i = 0; i < title.length; i++) { %>
+                                <th class=""><%= title[i].nome %></th>
+                            <% } %>
+                        </tr>
+                    </thead>
+                    <tbody class="w-bg-beige">
+                        <% for (var i = 0; i < item.length; i++) { %>
+                            <tr>
+                                <td><%= item[i].nome %></td>
+                                <td><%= item[i].quantità %></td>
+                                <td><%= item[i].prezzo %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
             </div>
-            <div class="w-w-100 w-bg-beige">
-                <% for (var i = 0; i < item.length; i++) { %>
-                    <div class="w-w-100 w-jc-sb">
-                        <div><%= item[i].nome %></div>
-                        <div><%= item[i].prezzo %></div>
-                        <div><%= item[i].quantità %></div>
-                    </div>
-                <% } %>
+            <div>
+                <button class="button">Ordina un Prodotto</button>
             </div>
         </div>
     </div>

@@ -1,28 +1,40 @@
 <%- include('bars/head', {title: 'Magazzino'}); %>
 <%- include('bars/header'); %>
-    <div class="w-bg-h w-p-7">
-        <div class="w-f-w-b w-f-s-70 w-ta-c w-intro w-c-bisque">Magazzino</div>
-        <div class="w-jc-c">
-            <table class="w-p-t-4">
+<div class="w-bg-h w-p-7">
+    <div class="w-f-w-b w-f-s-70 w-ta-c w-intro w-c-bisque w-m-b-4">Magazzino</div>
+    <div class="w-jc-sa w-w-90">
+        <div>
+            <table class="w-p-t-5">
                 <thead class="w-bg-beige w-m-t-4 w-f-s-20 w-f-w-b">
                     <tr>
                         <% for (var i = 0; i < title.length; i++) { %>
                             <th class="w-w-20"><%= title[i].nome %></th>
-                        <% } %>
-                    </tr>
-                </thead>
-                <tbody class="w-bg-beige">
-                    <% for (var i = 0; i < item.length; i++) { %>
-                        <tr>
-                            <td><%= item[i].nome %></td>
-                            <td><%= item[i].prezzo %></td>
-                            <td><%= item[i].quantità %></td>
-                            <td><%= item[i].codice %></td>
-                            <td><%= item[i].disponibilità %></td>
+                            <% } %>
                         </tr>
-                    <% } %>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody class="w-bg-beige">
+                        <% if (item.length === 0) { %>
+                            <td><%= "il magazzino è vuoto" %></td>
+                        <% } %>
+                        <% for (var i = 0; i < item.length; i++) { %>
+                            <tr>
+                                <td><%= item[i].nome %></td>
+                                <td><%= item[i].prezzo %></td>
+                                <td><%= item[i].quantità %></td>
+                                <td><%= item[i].codice %></td>
+                                <td><%= item[i].disponibilità %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+            <div class="w-p-t-4 w-col">
+                <form action="/delete" method="POST">
+                    <input class="button" type="text" name="q" placeholder="Spedisci...">
+                    <button type="submit" class="button">Spedisci Prodotto</button>
+                </form>
+                <a href="shipping" class="button">Vai alle Spedizioni</a>
+            </div>
         </div>
     </div> 
 <%- include('bars/footer'); %>

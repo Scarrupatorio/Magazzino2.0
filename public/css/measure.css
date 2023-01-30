@@ -4,6 +4,7 @@
 .w-jc-s { display: flex; justify-content: start; }
 .w-jc-e { display: flex; justify-content: end; }
 .w-jc-sb { display: flex; justify-content: space-between; }
+.w-jc-sa { display: flex; justify-content: space-around; }
  
 .w-ai-c { display: flex; align-items: center; }
 .w-ai-s { display: flex; align-items: start; }

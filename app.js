@@ -33,6 +33,8 @@ var women = require('./routes/women');
 var kids = require('./routes/kids');
 var sales = require('./routes/sales');
 
+//rotte funzioni
+
 //Initializing Express
 var app = express();
 
@@ -84,6 +86,10 @@ app.use('/', men);
 app.use('/', women);
 app.use('/', kids);
 app.use('/', sales);
+
+// rotte funzioni
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

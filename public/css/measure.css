@@ -71,12 +71,16 @@
 .w-m-l-4 { margin-left: 4px; }
 .w-m-l-5 { margin-left: 5px; }
 
+.w-w-20 { width: 20%; }
 .w-w-25 { width: 25%; }
 .w-w-50 { width: 50%; }
 .w-w-70 { width: 70%; }
 .w-w-75 { width: 75%; }
 .w-w-80 { width: 80%; }
 .w-w-100 { width: 100%; }
+
+.w-h-20 { height: 20%; }
+
 
 .w-f-s-10 { font-size: 10px; }
 .w-f-s-16 { font-size: 16px; }

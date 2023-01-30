@@ -3,3 +3,13 @@
                     <%= item.nome%>
                 </th>
             <% }) %> #}
+
+             <% item.forEach(item => { %>
+                    <td><%= item.nome%></td>
+                <% }) %>
+
+Item.find({}, function(err, item) {
+        res.render('warehouse', {
+            item: item
+        })   
+    })

@@ -57,8 +57,8 @@ html,body,.container{ height: 100%; margin: 0; padding: 0; }
 
 tr, th, td{
     border: 1.5px solid black;
-    text-align: left;
-    text-shadow: 4px 2px 8px black;
+    text-align: center;
+    /* text-shadow: 4px 2px 8px black; */
 }
 
 .form__button{

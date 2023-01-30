@@ -13,13 +13,25 @@ var mongoose = require('mongoose');
 
 //Routers
 var indexRouter = require('./routes/index');
-// var loginRouter = require('./routes/login');
-// var accountRouter = require('./routes/account');
-// var composeRouter = require('./routes/compose');
-// var savedmenuRouter = require('./routes/savedmenu');
-// var payRouter = require('./routes/pay');
-// var orderRouter = require('./routes/order');
 var warehouse = require('./routes/warehouse');
+var shipping = require('./routes/shipping');
+var orderSupplies = require('./routes/orderSupplies');
+var orderDetails = require('./routes/orderDetails');
+var profile = require('./routes/profile');
+var contact = require('./routes/contact');
+var aboutUs = require('./routes/aboutUs');
+
+// rotte del login
+var login = require('./routes/login');
+var account = require('./routes/account');
+var password = require('./routes/password');
+
+// rotte ecommerce
+var ecommerce = require('./routes/ecommerce');
+var men = require('./routes/men');
+var women = require('./routes/women');
+var kids = require('./routes/kids');
+var sales = require('./routes/sales');
 
 //Initializing Express
 var app = express();
@@ -53,13 +65,25 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-// app.use('/login', loginRouter);
-// app.use('/account', accountRouter);
-// app.use('/compose', composeRouter);
-// app.use('/savedmenu', savedmenuRouter);
-// app.use('/pay', payRouter);
-// app.use('/order', orderRouter);
 app.use('/', warehouse);
+app.use('/', shipping);
+app.use('/', orderSupplies);
+app.use('/', orderDetails);
+app.use('/', profile);
+app.use('/', contact);
+app.use('/', aboutUs);
+
+// rotte del login
+app.use('/', login);
+app.use('/', account);
+app.use('/', password);
+
+// rotte ecommerce
+app.use('/', ecommerce);
+app.use('/', men);
+app.use('/', women);
+app.use('/', kids);
+app.use('/', sales);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

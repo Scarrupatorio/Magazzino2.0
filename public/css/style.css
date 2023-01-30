@@ -1,0 +1,35 @@
+/*base-style*/
+
+body{font-family: 'Inter', sans-serif; font-size: 16px;}
+a{text-decoration: none;}
+
+.w-bg-h { 
+    background-image: url("../assets/sfondo.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+}
+
+.w-bg-p {
+    height: 100vh;
+}
+
+.w-intro { text-transform: uppercase; }
+.w-capital { text-transform: capitalize; }
+
+.button{
+    padding: 28px 18px; 
+    margin: 3px 3px;
+    color: bisque; 
+    background-color: black;
+    border-radius: 4px;
+}
+
+.backImage {
+    background-image: url("../assets/Ecommerce.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+}

@@ -1,13 +1,25 @@
 # Magazzino2.0
 
+Magazzino è una web app creata per l'esame di Tecnologie Web (TW6) dell'Università Parthenope di Napoli
+
 Per avviare il progetto:
 
-Prima Volta: 
-aprire il terminale e digitare 
-npm install express moongoose mongo-connect ejs connect-mongo cookie-parser 
-creare un file .env nella directory principale nel quale inserire il link del database chiamandolo MONGO_URI
+Clonare il progetto
 
-lanciare il comando npm run start
+[git clone ](https://github.com/Scarrupatorio/Magazzino2.0.git)
 
-Dalla Seconda volta in poi
-lanciare il comando npm run start
+Spostarsi nella cartella del progetto
+
+cd Magazzino2.0
+
+Installare le dipendenze
+
+npm install mongoose ejs bootsrap-icons express mongo-connect
+
+Creare e configurare il file .env
+
+MONGO_URI: {link database MONGODB}
+
+Avviare l'app
+
+npm run start

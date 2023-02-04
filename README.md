@@ -7,7 +7,7 @@ Per avviare il progetto:
 Clonare il progetto
 
 ```ps
-[git clone ](https://github.com/Scarrupatorio/Magazzino2.0.git)
+git clone (https://github.com/Scarrupatorio/Magazzino2.0.git)
 ```
 
 Spostarsi nella cartella del progetto

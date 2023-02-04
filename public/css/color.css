@@ -1,8 +1,10 @@
 .w-c-bisque { color: bisque; }
 .w-c-beige { color: beige; }
+.w-c-white {color: white; }
 
 
-.w-bg-beige { background-color: beige;}
+.w-bg-beige { background-color: beige; }
+.w-bg-pink { background-color: pink;}
 
 .t-shadow {text-shadow: 2px 6px 0px black;}
 

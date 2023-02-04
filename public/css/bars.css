@@ -10,6 +10,13 @@
     display: flex;
     width: 100%;
     background: blue;
+    position: fixed;
+}
+
+.barEF {
+    display: flex;
+    width: 100%;
+    background: blue;
 }
 
 .footer {
@@ -23,6 +30,8 @@
 .headerLogo {
     color: white;
     float: left;
+    text-transform: uppercase;
+    position: fixed;
 }
 
 .headerMenu {
@@ -37,8 +46,8 @@
 
 .headerMenuItem:hover {
     background-color: cornflowerblue;
-    transition: 0.7s;
-    padding: 4px;
+    /* transition: 0.7s; */
+    /* padding: 4px; */
 }
 
 .menu-button {

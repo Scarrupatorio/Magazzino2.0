@@ -2,13 +2,14 @@
 
 body{font-family: 'Inter', sans-serif; font-size: 16px;}
 a{text-decoration: none;}
+a:hover {text-decoration: none !important;}
 
 .w-bg-h { 
     background-image: url("../assets/sfondo.png"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    height: 100vh;
+    min-height: 100%;
 }
 
 .w-bg-p {
@@ -26,10 +27,18 @@ a{text-decoration: none;}
     border-radius: 4px;
 }
 
+.buttonE{
+    padding: 20px 10px; 
+    margin: 3px 3px;
+    color: bisque; 
+    background-color: blue;
+    border-radius: 6px;
+}
+
 .backImage {
     background-image: url("../assets/Ecommerce.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    height: 100vh;
+    min-height: 100%;
 }

@@ -3,8 +3,7 @@
     <div w-include-html="../bars/header.html"></div>
     <div class="w-bg-h w-p-7">
         <div class="w-f-w-b w-f-s-70 w-ta-c w-intro w-c-bisque">Ordini Forniture</div>
-        <div class="w-f-w-b w-f-s-20 w-ta-c w-capital w-m-t-4">ordini effettuati ordini ricevuti ordini da effetturare</div>
-        <div class="w-jc-sa w-w-100">
+        <div class="w-jc-sa w-w-90">
             <div class="">
                 <table class="w-p-t-4">
                     <thead class="w-bg-beige w-m-t-4 w-f-s-20 w-f-w-b">
@@ -17,8 +16,9 @@
                     <tbody class="w-bg-beige">
                         <% for (var i = 0; i < item.length; i++) { %>
                             <tr>
-                                <td><%= item[i].nome %></td>
-                                <td><%= item[i].quantità %></td>
+                                <td><%= item[i].numero_ordine %></td>
+                                <td><%= item[i].nome_ordine %></td>
+                                <td><%= item[i].numero_prodotti %></td>
                                 <td><%= item[i].prezzo %></td>
                             </tr>
                         <% } %>
@@ -26,7 +26,11 @@
                 </table>
             </div>
             <div>
-                <button class="button">Ordina un Prodotto</button>
+                <form action="/add" method="POST">
+                    <input class="button w-col w-w-75 m-r-1" type="text" name="nom" placeholder="Nome Ordine...">
+                    <input class="button w-col w-w-75 m-r-1" type="text" name="num" placeholder="Numero Prodotti...">
+                    <button type="submit" class="button w-w-100">Ordina Prodotto</button>
+                </form>
             </div>
         </div>
     </div>

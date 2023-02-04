@@ -6,6 +6,8 @@
         "start": "node ./bin/www"
     },
     "dependencies": {
+        "bootstrap": "^5.2.3",
+        "bootstrap-icons": "^1.10.3",
         "connect-mongo": "^4.6.0",
         "cookie-parser": "^1.4.6",
         "ejs": "^3.1.8",

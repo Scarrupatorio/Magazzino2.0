@@ -1,4 +1,16 @@
 <%- include('bars/head', {title: 'Men'}); %>
-    <div class="backImage w-p-7">
-        aaa
-    </div>
+<%- include('bars/headerEcommerce'); %>
+
+<div class="backImage w-p-7">
+    <div class="w-p-t-3 w-p-b-3 w-ta-s w-f-s-70 t-shadow">MEN</div>
+        <div class="container w-m-t-30">
+            <div class="row">
+            <% for (var i = 0; i < item.length; i++) { %>
+                <div class="w-p-t-1 col-4">
+                    <%- include('card/card', {title: item[i].nome, description: item[i].descrizione, price: item[i].prezzo}) %>
+                </div>
+                <% } %>
+            </div>
+        </div>
+</div>
+<%- include('bars/footerEcommerce'); %>

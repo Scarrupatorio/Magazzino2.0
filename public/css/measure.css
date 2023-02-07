@@ -86,6 +86,7 @@
 
 .w-h-20 { height: 20%; }
 
+.w-mh-3 { min-height: 30px; }
 .w-mh-5 { min-height: 50px; }
 .w-mh-25 { min-height: 250px; }
 

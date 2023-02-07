@@ -16,8 +16,6 @@ var indexRouter = require('./routes/index');
 var warehouse = require('./routes/warehouse');
 var shipping = require('./routes/shipping');
 var orderSupplies = require('./routes/orderSupplies');
-var orderDetails = require('./routes/orderDetails');
-var profile = require('./routes/profile');
 var contact = require('./routes/contact');
 var aboutUs = require('./routes/aboutUs');
 
@@ -32,8 +30,6 @@ var men = require('./routes/men');
 var women = require('./routes/women');
 var kids = require('./routes/kids');
 var sales = require('./routes/sales');
-
-//rotte funzioni
 
 //Initializing Express
 var app = express();
@@ -70,8 +66,6 @@ app.use('/', indexRouter);
 app.use('/', warehouse);
 app.use('/', shipping);
 app.use('/', orderSupplies);
-app.use('/', orderDetails);
-app.use('/', profile);
 app.use('/', contact);
 app.use('/', aboutUs);
 
@@ -86,10 +80,6 @@ app.use('/', men);
 app.use('/', women);
 app.use('/', kids);
 app.use('/', sales);
-
-// rotte funzioni
-
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -25,7 +25,7 @@ router.post('/add', function(req, res) {
                     numero_ordine: inc,
                     nome_ordine: req.body.nom,
                     numero_prodotti: req.body.num,
-                    prezzo: 10,
+                    prezzo: Math.round(Math.random() * 2 * req.body.num),
                 });
                 order.save().then(results => {
                     res.redirect('orders');
